@@ -1,0 +1,34 @@
+{
+  "name": "beth-poc",
+  "module": "app/index.ts",
+  "type": "module",
+  "scripts": {
+    "watch:import": "bun run scripts/auto-import-th.ts",
+    "dev": "bun run --watch app/index.ts ",
+    "tw": "tailwindcss -i ./app/style.css -o ./public/style.css",
+    "tw:dev": "tailwindcss -i ./app/style.css -o ./public/style.css --watch"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.2",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "bun-types": "latest",
+    "chokidar": "^3.5.3",
+    "eslint": "^8.48.0",
+    "jsdom": "^22.1.0",
+    "tailwindcss": "^3.3.3",
+    "typed-html": "^3.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@elysiajs/cookie": "^0.6.1",
+    "@elysiajs/cors": "^0.6.0",
+    "@elysiajs/html": "^0.6.0",
+    "@elysiajs/static": "^0.6.0",
+    "@elysiajs/swagger": "^0.6.1",
+    "elysia": "^0.6.16",
+    "elysia-autoroutes": "^0.2.2"
+  }
+}

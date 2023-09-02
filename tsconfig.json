@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "types": [
+      "bun-types"
+    ],
+    "target": "es2022",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "jsx": "react",
+    "jsxFactory": "th.createElement",
+    "strictNullChecks": true,
+    "noEmit": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "app/*"
+      ]
+    }
+  },
+  "include": [
+    "app/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
